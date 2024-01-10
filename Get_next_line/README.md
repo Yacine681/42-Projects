@@ -10,7 +10,7 @@ To use the function in your code, simply include its header:
 #include "get_next_line.h"
 ```
 
-and, when compiling your code, add the source files and the required flag:
+and, when compiling your code, add the source files:
 
 ```shell
 get_next_line.c get_next_line_utils.c || get_next_line_bonus.c get_next_line_utils_bonus.c
