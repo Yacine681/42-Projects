@@ -8,7 +8,7 @@
  Primarily implemented in C, with occasional projects exploring other languages such as C++ and others.
 
  ## 🎯 Objectives:
- These projects were undertaken as part of the École 42 curriculum, with the aim of fortifying my programming skills and deepening my understanding of software development concepts.
+ These projects were undertaken as part of the School 42 curriculum, with the aim of fortifying my programming skills and deepening my understanding of software development concepts.
 
  ## 📚 Learning objective:
  Emphasis on algorithms, data structures, and the practical application of programming principles across various fields.
