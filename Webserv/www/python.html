@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>WebServ</title>
+    </head>
+    <body>
+        <div class="button">
+			<button id="Home" class="submit">Home</button>
+			<button id="redirectionButton" class="submit">Redirection</button>
+			<button id="cppButton" class="submit">Cpp</button>
+			<button id="subButton" class="submit">Subscribe</button>
+			<button id="pythonButton" class="submit">Login</button>
+			<button id="errorsButton" class="submit">Errors</button>
+      		<button id="uploadButton" class="submit">Upload</button>
+
+        	<div class="DarkMode submit"></div>
+		</div>
+
+		<script src="js/darkTheme.js"></script>
+		<script src="js/button.js"></script>
+		<h1>log in</h1>
+
+		<p>
+			<form action="/python" method="post">
+				<label for="u_name">user name:</label><br>
+				<input type="text" id="u_name" name="u_name" value=""><br>
+				<label for="pwd">password:</label><br>
+				<input type="password" id="pwd" name="pwd" value=""><br><br>
+				<input type="submit" value="login">
+			</form>
+			<a href="/python">check cookies</a>
+		</p>
+   </body>
+</html>

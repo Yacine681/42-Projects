@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>WebServ</title>
+    </head>
+    <body>
+        <div class="button">
+			<button id="Home" class="submit">Home</button>
+			<button id="redirectionButton" class="submit">Redirection</button>
+			<button id="cppButton" class="submit">Cpp</button>
+			<button id="subButton" class="submit">Subscribe</button>
+			<button id="pythonButton" class="submit">Login</button>
+			<button id="errorsButton" class="submit">Errors</button>
+	    	<button id="uploadButton" class="submit">Upload</button>
+
+        	<div class="DarkMode submit"></div>
+		</div>
+
+		<script src="js/darkTheme.js"></script>
+		<script src="js/button.js"></script>
+		<h1>CPP calculator</h1>
+	<p>
+		<form action="/cpp" method="get">
+			<table>
+				<tr>
+					<td>first number</td>
+					<td>operation</td>
+					<td>second number</td>
+				</tr>
+				<tr>
+					<td ><input type="text" id="f_number" name="f_number" value=""></td>
+					<td>
+						<select  id="operation" name="operation">
+							<option value="+">+</option>
+							<option value="-">-</option>
+							<option value="*">*</option>
+							<option value="/">/</option>
+						  </select>
+					</td>
+					<td><input type="text" id="s_number" name="s_number" value=""></td>
+					<td>
+						<input type="submit" value="Result">
+					</td>
+				</tr>			
+			</table>
+
+		</form>
+	</p>
+   </body>
+</html>

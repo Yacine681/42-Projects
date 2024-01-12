@@ -1,0 +1,16 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+  }
+  
+  .center-container {
+	text-align: center;
+  }
+  p {
+	font-family: "Arial", sans-serif; /* Change this to your desired font */
+	font-size: 100px; /* Adjust the font size as needed */
+  }
+  
