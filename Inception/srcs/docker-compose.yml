@@ -1,0 +1,63 @@
+version: '3.3'
+services:
+    wordpress:
+        build:
+          context: ./requirements/wordpress/
+          args:
+            PHP_VERSION: 7.3
+        container_name: wordpress
+        depends_on:
+          - mariadb
+        networks:
+          - network_42
+        env_file:
+          - ".env"
+        volumes:
+          - "wp:/var/www/html/wordpress"
+        restart: always
+
+    nginx:
+        image: nginx:mine
+        build:
+          context: ./requirements/nginx/
+          args:
+            DOMAIN_NAME: ${DOMAIN_NAME}
+            LOGIN: ${LOGIN}
+        container_name: nginx
+        depends_on:
+          - wordpress
+        networks:
+          - network_42
+        ports:
+          - "443:443"
+        volumes:
+          - "wp:/var/www/html/wordpress"
+        restart: always
+
+    mariadb:
+        env_file:
+        - ".env"
+        build: ./requirements/mariadb/
+        container_name: mariadb
+        networks:
+        - network_42
+        volumes:
+        - "db:/var/lib/mysql"
+        restart: always
+
+networks:
+  network_42:
+
+volumes:
+  wp:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/yacine/data/wordpress
+      o: bind
+  db:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/yacine/data/mariadb
+      o: bind
