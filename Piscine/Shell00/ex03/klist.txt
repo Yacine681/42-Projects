@@ -1,0 +1,5 @@
+Credentials cache: API:9DC65EBC-36F5-497D-BD20-640BCDC56EC4
+        Principal: yabed@42MULHOUSE.FR
+
+  Issued                Expires               Principal
+Nov  8 18:48:30 2021  Nov  9 04:48:11 2021  krbtgt/42MULHOUSE.FR@42MULHOUSE.FR
