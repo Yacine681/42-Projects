@@ -32,14 +32,17 @@ int	double_0(t_element **stack_a)
 
 void	ft_free(t_element **stack)
 {
-	t_element	*tmp1;
+	t_element	*current;
+	t_element	*next;
 
-	tmp1 = *stack;
-	while (tmp1 != NULL)
+	current = *stack;
+	while (current != NULL)
 	{
-		free(tmp1);
-		tmp1 = tmp1->next;
+		next = current->next;
+		free(current);
+		current = next;
 	}
+	*stack = NULL;
 }
 
 void	ft_neg_to_pos(t_element **stack_a, t_element **stack_tmp)
