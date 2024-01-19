@@ -29,7 +29,7 @@ void	push_swap(t_element **stack_a, t_element **stack_b, t_element **tmp)
 
 int	main(int argc, char **argv)
 {
-	t_list	push;
+	t_list	push = {NULL, NULL, NULL, 0, NULL};
 
 	if (argc > 2)
 	{
